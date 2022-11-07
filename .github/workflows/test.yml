@@ -19,3 +19,12 @@ jobs:
 
     - name: Verify the file was created
       run: ls
+
+    - name: Add the new file
+      run: git add .
+
+    - name: Commit the new file
+      run: git commit -m "Commit from github action"
+
+    - name: Push the new file
+      run: git push -u origin main
