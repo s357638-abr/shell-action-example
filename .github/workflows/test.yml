@@ -1,5 +1,5 @@
 name: Demo
-on: [push]
+#on: [push]
 
 jobs:
   test:
@@ -12,9 +12,5 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Run say-hello script
-      run: say-hello
-      shell: bash
-      
-    - name: Run touch-file script
-      run: touch-file
+      run: say-hello.sh
       shell: bash
