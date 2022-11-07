@@ -20,6 +20,9 @@ jobs:
     - name: Verify the file was created
       run: ls
 
+    - name: Echo github.actor
+      run: echo ${{ github.actor }}
+
     - name: Persist file changes to git
       run: |
           git config --global user.name 's357638-abr'
