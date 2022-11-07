@@ -11,12 +11,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Run some remote script
-      run: .github/remote-run s357638-abr/shell-action-example say-hello Thor
-
-    - name: Run another remote script that creates a file
-      run: .github/remote-run s357638-abr/shell-action-example touch-file
-
-    - name: Verify the file was created
-      run: ls
-
+    - name: Run say-hello script
+      run: say-hello
+      shell: bash
+      
+    - name: Run touch-file script
+      run: touch-file
+      shell: bash
