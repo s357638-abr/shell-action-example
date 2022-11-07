@@ -1,5 +1,5 @@
 name: Demo
-#on: [push]
+on: [push]
 
 jobs:
   test:
