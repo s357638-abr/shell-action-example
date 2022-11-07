@@ -24,5 +24,6 @@ jobs:
       run: |
           git config --global user.name 's357638-abr'
           git config --global user.email 'steven.pazur@abr.com'
+          git add it-is-working-nicely.txt
           git commit -am "Automated report"
           git push
