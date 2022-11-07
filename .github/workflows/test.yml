@@ -12,5 +12,5 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Run say-hello script
-      run: ./say-hello.sh
+      run: s357638-abr/shell-action-example/say-hello.sh
       shell: bash
